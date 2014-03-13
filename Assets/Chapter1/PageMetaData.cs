@@ -8,6 +8,6 @@ public class PageMetaData : MonoBehaviour {
 	public Transform playerExit;
 	public List<Transform> ups;		//somethings
 	public List<Transform> downs; 	//holes
-	public Transform camera; 
+	public Transform initialCamera; 
 	
 }

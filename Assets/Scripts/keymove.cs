@@ -10,10 +10,10 @@ public class keymove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetButtonDown("A"))
+		if(Input.GetKey (KeyCode.A))
 		   this.transform.Translate(new Vector3(1f,0f,0f));
-		if (Input.GetButtonDown ("D"))
-						this.transform.Translate (new Vector3 (-1f, 0f, 0f));
+		if (Input.GetKey (KeyCode.D))
+			this.transform.Translate (new Vector3 (-1f, 0f, 0f));
 	
 	}
 }
