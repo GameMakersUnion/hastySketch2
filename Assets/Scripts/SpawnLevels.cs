@@ -6,14 +6,17 @@ public class SpawnLevels : MonoBehaviour {
 
 	Queue<AsyncOperation> pendingLoads = new Queue<AsyncOperation>();
 	List<GameObject> chapters = new List<GameObject>();
-	bool dingus;
+	GameObject levelCamera;
+	public Transform player;
 	// Use this for initialization
 	void Start () {
 		Debug.Log (transform.parent);
+		levelCamera = GameObject.Find("levelCamera");
 	}
 
 	// Update is called once per frame
 	void Update () {
+
 		if (Input.GetKeyDown (KeyCode.P)) {
 
 			StartCoroutine("loadChapter");
@@ -27,6 +30,11 @@ public class SpawnLevels : MonoBehaviour {
 				foreach(GameObject g in GameObject.FindGameObjectsWithTag("Chapter")){
 					if (!chapters.Contains(g)) chapters.Add(g);
 					g.transform.Translate(new Vector3(0,0,200));
+					GameObject firstPage = g.GetComponent<ChapterMetaData>().initialPage;
+					PageMetaData firstPageData = firstPage.GetComponent<PageMetaData>();
+					levelCamera.transform.position = firstPageData.initialCamera.position;
+					Instantiate(player,firstPageData.playerStart.position, Quaternion.identity);
+
 				}						
 			}
 		}

@@ -96,10 +96,9 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 29380348}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.6732864, y: 11.5897179, z: 82.5222473}
+  m_LocalPosition: {x: -21.6732864, y: 11.5897179, z: -2509.45508}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2134422380}
   - {fileID: 1738441820}
   - {fileID: 948473082}
   m_Father: {fileID: 0}
@@ -285,7 +284,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 496080854}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: -4.37113883e-08}
-  m_LocalPosition: {x: 3, y: 0, z: 5.60472107}
+  m_LocalPosition: {x: 3, y: 0, z: -2586.37256}
   m_LocalScale: {x: 97.3399963, y: 67.8000031, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -408,6 +407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6465cb8831c85f42a5c924986201636, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 400004, guid: e76cce3ef6347724eb22d52b3395a598, type: 2}
 --- !u!1 &1113313171
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,7 +488,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1200804739}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.9081254, y: -14.894681, z: 5.51379395}
+  m_LocalPosition: {x: -3.9081254, y: -14.894681, z: -2586.46362}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 316980410}
@@ -702,7 +702,7 @@ GameObject:
   - 114: {fileID: 2134422381}
   - 114: {fileID: 2134422382}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: levelCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -765,10 +765,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2134422375}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.6732845, y: -11.5897179, z: 17.4777527}
+  m_LocalPosition: {x: -0, y: 0, z: 100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 29380349}
+  m_Father: {fileID: 0}
 --- !u!114 &2134422381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -791,3 +791,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6465cb8831c85f42a5c924986201636, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
